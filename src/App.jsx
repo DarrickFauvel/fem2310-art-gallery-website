@@ -1,15 +1,11 @@
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+
 function App() {
   return (
     <>
+      <Hero />
       {/* 
-  Modern Art Gallery
-
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
-
-  Our location
-
   Your day at the gallery
 
   Wander through our distinct collections and find new insights about 
@@ -25,6 +21,7 @@ function App() {
   The Modern Art Gallery is free to all visitors and open seven days a week 
   from 8am to 9pm. Find us at 99 King Street, Newport, USA.
   */}
+      <Footer />
     </>
   );
 }

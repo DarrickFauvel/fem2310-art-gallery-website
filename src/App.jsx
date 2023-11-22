@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./features/misc/routes/Layout"
 import Location from "./features/misc/routes/Location"
 import Home from "./features/misc/routes/Home"
+import ScrollToTop from "./utils/ScrollToTop"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="location" element={<Location />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </BrowserRouter>
   )
 }

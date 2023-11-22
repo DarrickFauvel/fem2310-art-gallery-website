@@ -9,13 +9,19 @@ const Home = () => {
   return (
     <>
       {/* START hero section */}
-      <section>
+      <section className="relative">
         <Image
+          className="md:hidden"
           src="/assets/mobile/image-hero.jpg"
           alt="two people looking at a large artwork of an elder woman"
         />
-        <div className="grid gap-8 px-4 py-6">
-          <Heading level="h1">
+        <Image
+          className="hidden md:block md:h-[700px] md:w-auto"
+          src="/assets/tablet/image-hero.jpg"
+          alt="two people looking at a large artwork of an elder woman"
+        />
+        <div className="grid gap-8 px-4 py-6 md:absolute md:top-[145px] md:right-[2em] md:w-[339px]">
+          <Heading level="h1" className="md:leading-[.95] md:text-[70px]">
             Modern <br />
             Art Gallery
           </Heading>
